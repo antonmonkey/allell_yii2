@@ -1,0 +1,366 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bdla",
+				"bdlab_link"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"asse",
+				"assets"
+			],
+			[
+				"img",
+				"img_uri"
+			],
+			[
+				"hos",
+				"hos_register_metabox"
+			],
+			[
+				"add_meta",
+				"add_meta_boxes"
+			],
+			[
+				"add",
+				"add_action"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"prin",
+				"printer_close"
+			],
+			[
+				"Hos",
+				"HosImageUploader"
+			],
+			[
+				"add_",
+				"add_meta_box"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 503.0
+	},
+	"console":
+	{
+		"height": 335.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/html/allell.loc"
+	],
+	"file_history":
+	[
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-autos.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-blog.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/sftp-config.json",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/functions.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/.htaccess",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-services.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-test.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/template-parts/content-autos.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/footer.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/header.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/index.php",
+		"/home/hossi/Desktop/index.html",
+		"/home/hossi/Desktop/pricecalc.html",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-contacts.php",
+		"/var/www/html/kvad.local/config/web.php",
+		"/var/www/html/kvad.local/config/db.php",
+		"/var/www/html/kvad.local/views/page/index.php",
+		"/var/www/html/kvad.local/controllers/PageController.php",
+		"/var/www/html/kvad.local/assets/AppAsset.php",
+		"/var/www/html/kvad.local/web/.htaccess",
+		"/var/www/html/kvad.local/.htaccess",
+		"/var/www/html/kvad.local/views/layouts/main.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/footer.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/assets/css/style-hos.css",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/languages/ru_RU.po",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/inc/template-tags.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts/content-single.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/single.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts/content-big.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/inc/hos-functions.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/index.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts/content-hos-edit.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts/content.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/functions.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/languages/ru_RU.mo",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/archive.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/strong-testimonials/templates/default/form.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/strong-testimonials/strong-testimonials.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/strong-testimonials/includes/class-strong-view-form.php",
+		"/home/hossi/Desktop/wp-instagram-widget-master/wp-instagram-widget.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/parts/wp-instagram-widget.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts/sidebar-footer.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/style.css",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/assets/css/editor-style.css",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/header.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/sftp-config.json",
+		"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/404.php",
+		"/home/hossi/.config/sublime-text-3/Packages/SFTP/SFTP.sublime-settings",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel/header.php",
+		"/var/www/html/kvad.local/controllers/SiteController.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel/templates/header-custom.php",
+		"/var/www/html/kvad.local/views/site/hello.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel/templates/header-widgets.php",
+		"/var/www/html/kvad.local/views/site/contact.php",
+		"/home/hossi/web_dev/wordpress-parts/my_plugins/hos-og-plugin/hos-og-plugin.php",
+		"/var/www/html/test/wp-content/plugins/hos-og-plugin/hos-og-plugin.php",
+		"/var/www/html/test/wp-content/themes/twentyseventeen/inc/hos-widget/style.css",
+		"/var/www/html/test/wp-content/themes/twentyseventeen/inc/hos-functions.php",
+		"/var/www/html/test/wp-content/themes/twentyseventeen/functions.php",
+		"/var/www/html/test/wp-content/themes/twentyseventeen/assets/js/hos-main.js",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/inc/customizer.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/index.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/functions.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/js/allelectrics.js",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/header.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/26.08.17/www/wp-content/themes/allelectrics-theme/page-contacts.php",
+		"/var/www/html/test/wp-content/plugins/hossis-image-uploader/hossis-image-uploader.php",
+		"/var/www/html/test/wp-content/plugins/hos-og-plugin/hos-og-plugin",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/wp_image_uploader-master/src/wordpress-image-upload.js",
+		"/var/www/html/test/wp-content/plugins/hossis-image-uploader/js/hossis-image-upload.js",
+		"/var/www/html/test/wp-content/plugins/hossis-image-uploader/hos-uplodaer-class/hos-uploader-class.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/wp_image_uploader-master/hos-functions.php",
+		"/var/www/html/test/wp-content/themes/twentyseventeen/inc/hos-function.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/wp_image_uploader-master/wordpress-image-upload-core.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/wp_image_uploader-master/src/js/utils.js",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/wp_image_uploader-master/src/js/wp-image-uploader-main.js",
+		"/var/www/html/test/wp-content/plugins/hossis-image-uploader/js/utils/utils.js",
+		"/var/www/html/test/wp-config.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/wp-config_bdlab.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/11.08.17/www/allelectrics/wp-content/themes/allelectrics-theme/single.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/custom-post-type-image-upload/custom-post-type-image-upload.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/single.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/single.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/libraries/custom-image-uploader-master/image-upload.js",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-page.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-post.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/page.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-autos.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/content-page.php",
+		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/tpl.iconed-item.php",
+		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/tpl.default-item.php",
+		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/services.php",
+		"/var/www/html/pp/wp-content/themes/unitravel/content-excerpt.php",
+		"/var/www/html/pp/wp-content/themes/unitravel/css/responsive.css",
+		"/var/www/html/pp/wp-content/themes/unitravel/style.css",
+		"/var/www/html/pp/wp-content/themes/unitravel/plugins/trx_addons/trx_addons.css",
+		"/var/www/html/pp/wp-content/plugins/trx_addons/css/trx_addons.css",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/allelectrics-theme/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/allelectrics-theme/wp-content/themes/allelectrics-theme/index.php"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan",
+			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts",
+			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan",
+			"/home/hossi/web_dev/proj-files/2017-summer/VVT/strong-testimonials",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel/plugins/trx_addons",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/wp_theme/unitravel",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img",
+			"urlManager",
+			"blaskan_entry_footer()",
+			"col-md-4 col-xs-12 pull-right text-right",
+			"blaskan_create_read_more_link",
+			"$more_link",
+			"blaskan_create_read_more_link",
+			"entry-footer index-entry",
+			"Continue reading",
+			"wpmtst_form_submit_button()",
+			"add testimonial",
+			"Similar Posts",
+			"more-link",
+			"111LEARN MORE",
+			"trx_addons_action_show_layout",
+			"unitravel_trx_addons_action_show_layout",
+			"unitravel_action_show_layout",
+			"utils",
+			"_utils",
+			"data",
+			"findImageUploadData()",
+			"esc_attr",
+			"fetch_custom_load_metadata",
+			"'trx_addons'",
+			"('Learn more', 'trx_addons')",
+			"trx_addons",
+			"services_item_info",
+			"services-item-info",
+			"learn more",
+			"('Learn more')",
+			"__('Learn more')",
+			"__(learn more)",
+			"learn more",
+			"Learn more",
+			"font-family: Pacifico, cursive;",
+			"font"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 66.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 150.0
+	},
+	"pinned_build_system": "",
+	"project": "allell.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 278.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
