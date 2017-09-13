@@ -48,8 +48,14 @@ $config = [
             'blog' => 'site/blog',
             'eshop' => 'site/eshop',
             'services' => 'site/services',
+            'admin' => 'admin/admin/index',
           ],
     ],
+    ],
+    'modules' => [
+      'admin' => [
+          'class' => 'app\modules\admin\Module',
+          ],
     ],
     'params' => $params,
 ];
