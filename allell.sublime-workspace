@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margi",
+				"margin-top"
+			],
+			[
 				"bdla",
 				"bdlab_link"
 			],
@@ -51,6 +55,33 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "views/site/contact.php",
+			"settings":
+			{
+				"buffer_size": 1310,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/web.php",
+			"settings":
+			{
+				"buffer_size": 1784,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "controllers/SiteController.php",
+			"settings":
+			{
+				"buffer_size": 1954,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -89,13 +120,52 @@
 	},
 	"expanded_folders":
 	[
-		"/var/www/html/allell.loc"
+		"/var/www/html/allell.loc",
+		"/var/www/html/allell.loc/config",
+		"/var/www/html/allell.loc/views"
 	],
 	"file_history":
 	[
+		"/var/www/html/allell.loc/config/web.php",
+		"/var/www/html/allell.loc/controllers/SiteController.php",
+		"/var/www/html/allell.loc/allell.sublime-project",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/sftp-config.json",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/header.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-mail.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-settings.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/xmlrpc.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-trackback.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-signup.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-login.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-load.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-links-opml.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-cron.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-config-sample.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-config.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-comments-post.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-blog-header.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-activate.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/google519196af1e927577.html",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/index.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/license.txt",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/readme.html",
+		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/style.css",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/plugins/trx_addons/shortcodes/form/tpl.default.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/plugins/trx_addons/shortcodes/form/form.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/themes/unitravel/functions.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/plugins/trx_addons/trx_addons.php",
+		"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/plugins/trx_addons/languages/ru_RU.po",
+		"/var/www/html/allell.loc/views/site/index.php",
+		"/var/www/html/allell.loc/views/layouts/main.php",
+		"/var/www/html/allell.loc/assets/PublicAsset.php",
+		"/var/www/html/allell.loc/web/public/css/style.css",
+		"/var/www/html/allell.loc/assets/AppAsset.php",
+		"/var/www/html/allell.loc/web/.htaccess",
+		"/var/www/html/allell.loc/config/.gitignore",
+		"/var/www/html/allell.loc/a.txt",
+		"/var/www/html/allell.loc/config/.htaccess",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-autos.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-blog.php",
-		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/sftp-config.json",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/functions.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/.htaccess",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/page-services.php",
@@ -103,7 +173,6 @@
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/template-parts/content-autos.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/footer.php",
-		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/header.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/08.09.17/www/wp-content/themes/allelectrics-theme/index.php",
 		"/home/hossi/Desktop/index.html",
 		"/home/hossi/Desktop/pricecalc.html",
@@ -184,16 +253,7 @@
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/template-parts/content-autos.php",
 		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/backup/16.08.17/www/wp-content/themes/allelectrics-theme/content-page.php",
-		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/tpl.iconed-item.php",
-		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/tpl.default-item.php",
-		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/services.php",
-		"/var/www/html/pp/wp-content/themes/unitravel/content-excerpt.php",
-		"/var/www/html/pp/wp-content/themes/unitravel/css/responsive.css",
-		"/var/www/html/pp/wp-content/themes/unitravel/style.css",
-		"/var/www/html/pp/wp-content/themes/unitravel/plugins/trx_addons/trx_addons.css",
-		"/var/www/html/pp/wp-content/plugins/trx_addons/css/trx_addons.css",
-		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/allelectrics-theme/wp-content/themes/allelectrics-theme/template-parts/content-blog.php",
-		"/home/hossi/web_dev/proj-files/2017-summer/allelectrics/allelectrics-theme/wp-content/themes/allelectrics-theme/index.php"
+		"/var/www/html/pp/wp-content/plugins/trx_addons/cpt/services/tpl.iconed-item.php"
 	],
 	"find":
 	{
@@ -204,6 +264,10 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/themes/unitravel",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/plugins/trx_addons",
+			"/home/hossi/web_dev/proj-files/2017-summer/pectoral_prirodbl/backup/3%-23.08.17/www/wp-content/themes/unitravel",
 			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan",
 			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan/template-parts",
 			"/home/hossi/web_dev/proj-files/2017-summer/VVT/theme/blaskan",
@@ -219,6 +283,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"load_theme_textdomain",
+			"ad_plugin_textdomain(",
+			"TRX_ADDONS_PLUGIN_BASE",
+			"sc_form_form",
+			"sc_form sc_form_default",
+			"Your name",
+			"header",
+			"url",
+			"row-center",
+			"url",
+			"img src",
 			"img",
 			"urlManager",
 			"blaskan_entry_footer()",
@@ -272,8 +347,369 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "views/site/contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1310,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								262
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										258,
+										261
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										103,
+										106
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "config/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1784,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1455,
+								1455
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1466,
+										1467
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/square_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1413,
+										1414
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "controllers/SiteController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1954,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1851,
+								1851
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										1851,
+										1852
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/single_quote.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										1843,
+										1844
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1449.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],

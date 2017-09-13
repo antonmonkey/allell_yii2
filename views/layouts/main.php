@@ -31,7 +31,7 @@ PublicAsset::register($this);
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
-              <a class="navbar-brand page-scroll" href="#page-top">
+              <a class="navbar-brand page-scroll" href="/">
                 <img alt="Brand" src="public/images/small-logo.png" class="img-responsive">
               </a>
           </div>
@@ -43,19 +43,19 @@ PublicAsset::register($this);
                       <a href="#page-top"></a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#">Автомобили</a>
+                      <a class="page-scroll" href="/auto">Автомобили</a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#portfolio">E-магазин</a>
+                      <a class="page-scroll" href="/eshop">E-магазин</a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#about">Услуги</a>
+                      <a class="page-scroll" href="/services">Услуги</a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#team">Блог</a>
+                      <a class="page-scroll" href="/blog">Блог</a>
                   </li>
                   <li class="">
-                      <a class="page-scroll" href="#contact">Контакты</a>
+                      <a class="page-scroll" href="/contact">Контакты</a>
                   </li>
               </ul>
           </div>
@@ -63,6 +63,7 @@ PublicAsset::register($this);
       </div>
       <!-- /.container-fluid -->
   </nav>
+  <div class="grey-line-under-nav"></div>
   
   <?php echo $content;?>
 

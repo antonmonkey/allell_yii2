@@ -318,7 +318,6 @@ fieldset[disabled] .btn-xl:hover {
 
 header {
     background-image: url(../images/main-banner-img.png);
-/*    background-color: #f6f9f9;*/
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;

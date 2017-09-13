@@ -1,8 +1,8 @@
 <?php
 /* @var $this yii\web\View */
-$this->title = 'My Yii Application';
+$this->title = 'ALLELL';
 ?>
-<!-- section header -->
+  <!-- section header -->
   <header>
       <div class="container">
           <div class="intro-text">

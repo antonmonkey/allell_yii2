@@ -20,7 +20,7 @@ class PublicAsset extends AssetBundle
       'public/css/style.css',
     ];
     public $js = [
-      'public/js/'
+      'public/js/main.js'
     ];
     public $depends = [
       'yii\web\YiiAsset',
