@@ -8,7 +8,6 @@ use app\modules\admin\assets\AdminAsset;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-rmrevin\yii\fontawesome\AssetBundle::register($this);
 AdminAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
@@ -26,13 +25,13 @@ AdminAsset::register($this);
 <?php $this->beginBody() ?>
 <!--Header-part-->
 <div id="header">
-  <h1><a href="dashboard.html">Matrix Admin</a></h1>
+  <h1><a href="dashboard.html">ALLELL административная панель</a></h1>
 </div>
 <!--close-Header-part--> 
 
 
 <!--top-Header-menu-->
-<div id="user-nav" class="navbar navbar-inverse">
+<div id="user-nav" class="navbar">
   <ul class="nav">
     <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
       <ul class="dropdown-menu">
@@ -69,26 +68,17 @@ AdminAsset::register($this);
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul>
     <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-    <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
-    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Типы автомобилей</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="create">Create</a></li>
+        <li><a href="index">View</a></li>
+        </ul>
+    </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
       <ul>
         <li><a href="form-common.html">Basic Form</a></li>
         <li><a href="form-validation.html">Form with Validation</a></li>
         <li><a href="form-wizard.html">Form with Wizard</a></li>
-      </ul>
-    </li>
-    <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
-    <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">5</span></a>
-      <ul>
-        <li><a href="index2.html">Dashboard2</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="calendar.html">Calendar</a></li>
-        <li><a href="invoice.html">Invoice</a></li>
-        <li><a href="chat.html">Chat option</a></li>
       </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> <span class="label label-important">4</span></a>
@@ -99,26 +89,11 @@ AdminAsset::register($this);
         <li><a href="error500.html">Error 500</a></li>
       </ul>
     </li>
-    <li class="content"> <span>Monthly Bandwidth Transfer</span>
-      <div class="progress progress-mini progress-danger active progress-striped">
-        <div style="width: 77%;" class="bar"></div>
-      </div>
-      <span class="percent">77%</span>
-      <div class="stat">21419.94 / 14000 MB</div>
-    </li>
-    <li class="content"> <span>Disk Space Usage</span>
-      <div class="progress progress-mini active progress-striped">
-        <div style="width: 87%;" class="bar"></div>
-      </div>
-      <span class="percent">87%</span>
-      <div class="stat">604.44 / 4000 MB</div>
-    </li>
   </ul>
 </div>
 <!--sidebar-menu-->
-  
-  <?php echo $content;?>
 
+<?php echo $content;?>
 
 <!--Footer-part-->
 
@@ -127,31 +102,6 @@ AdminAsset::register($this);
 </div>
 
 <!--end-Footer-part-->
-
-<script type="text/javascript">
-  // This function is called from the pop-up menus to transfer to
-  // a different page. Ignore if the value returned is a null string:
-  function goPage (newURL) {
-
-      // if url is empty, skip the menu dividers and reset the menu selection to default
-      if (newURL != "") {
-      
-          // if url is "-", it is this page -- reset the menu:
-          if (newURL == "-" ) {
-              resetMenu();            
-          } 
-          // else, send page to designated URL            
-          else {  
-            document.location.href = newURL;
-          }
-      }
-  }
-
-// resets the menu selection upon entry to this page:
-function resetMenu() {
-   document.gomenu.selector.selectedIndex = 2;
-}
-</script>
 <?php $this->endBody() ?>
 </body>
 </html>

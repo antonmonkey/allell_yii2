@@ -8,12 +8,17 @@ use app\models\AutosSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use app\models\ImageUpload;
+use yii\web\UploadedFile;
 
 /**
  * AutosController implements the CRUD actions for Autos model.
  */
 class AutosController extends Controller
 {
+
+    public $layout = '@app/modules/admin/views/layouts/main.php';
+  
     /**
      * @inheritdoc
      */
@@ -35,12 +40,10 @@ class AutosController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new AutosSearch();
-        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+        $model = Autos::find()->all();
 
         return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+          'model' => $model,
         ]);
     }
 
@@ -120,5 +123,25 @@ class AutosController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionSetImage($id)
+    {
+
+      $model = new ImageUpload;
+
+      if  (Yii::$app->request->isPost)
+      {
+          $autos = $this->findModel($id);
+
+          $file = UploadedFile::getInstance($model, 'image');
+
+          if ($autos->saveImage($model->uploadFile($file, $autos->img));) {
+            return $this->redirect(['view', 'id' => $autos->id]);
+          }
+
+      }
+
+      return $this->render('image', ['model' => $model]);
     }
 }

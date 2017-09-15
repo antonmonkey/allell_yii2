@@ -28,9 +28,8 @@ class Autos extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'img', 'created'], 'required'],
-            [['created'], 'safe'],
-            [['type', 'img'], 'string', 'max' => 255],
+            [['type', 'img',], 'required'],
+            [['type', 'img', 'imgflare'], 'string', 'max' => 255],
         ];
     }
 
@@ -41,9 +40,17 @@ class Autos extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'type' => 'Type',
+            'type' => 'Car Type',
             'img' => 'Img',
+            'imgflares' => 'Img Flares',
             'created' => 'Created',
         ];
+    }
+
+    public function saveImage($filename)
+    {
+        $this->img = $filename;
+
+        return $this->save(false);
     }
 }

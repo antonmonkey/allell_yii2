@@ -8,6 +8,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Autos;
 
 class SiteController extends Controller
 {
@@ -89,7 +90,11 @@ class SiteController extends Controller
 
     public function actionAuto()
     {
-        return $this->render('auto');
+        $autos = Autos::find()->all();
+
+        return $this->render('auto',[
+            'autos' => $autos,
+          ]);
     }
 
     public function actionBlog()
