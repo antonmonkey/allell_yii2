@@ -51,6 +51,16 @@ $config = [
             'admin' => 'admin/admin/index',
           ],
         ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'sourcePath' => null,   // не опубликовывать комплект
+                    'js' => [
+                        '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
+                    ]
+                ],
+            ],
+        ],
     ],
     'modules' => [
       'admin' => [
@@ -62,6 +72,7 @@ $config = [
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
+    $config['components']['assetManager']['forceCopy'] = true;
     $config['bootstrap'][] = 'debug';
     $config['modules']['debug'] = 'yii\debug\Module';
 

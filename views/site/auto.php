@@ -13,8 +13,8 @@
 
         <div class="col-md-4 col-sm-6 col-centered autos-page-item">
           <div class="autos-page-item-img">
-           <img src="/uploads/<?=$auto['imgflare'];?>" alt="image" title="image" class="flicking-image img-responsive">
-           <img src="/uploads/<?= $auto['img'] ? $auto['img'] : '';?>" alt="image" title="image" class="img-responsive">
+            <img src="/uploads/<?=$auto['imgflare'];?>" alt="image" title="image" class="flicking-image img-responsive">
+            <img src="/uploads/<?= $auto['img'] ? $auto['img'] : '';?>" alt="image" title="image" class="img-responsive">
           </div>
           <hr width="75%" class="page-autos-line">
           <h3><?=$auto['type'];?></h3>

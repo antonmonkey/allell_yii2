@@ -28,6 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
             <div class="widget-content">
               <ul class="recent-posts">
+                <li>
+                  <?= Html::a('Create Auto Type', ['create'], ['class' => 'btn btn-success']) ?>
+                </li>
                 <?php foreach ($model as $model) : ?>
                 <li>
                   <div class="auto-type-thumb">
@@ -49,9 +52,6 @@ $this->params['breadcrumbs'][] = $this->title;
                   </div>
                 </li>
                 <?php endforeach ; ?>
-                <li>
-                  <?= Html::a('Create Auto Type', ['create'], ['class' => 'btn btn-success']) ?>
-                </li>
               </ul>
             </div>
           </div>

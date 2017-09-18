@@ -38,26 +38,16 @@ $this->params['breadcrumbs'][] = 'Update';
       </div>
     </div>
   </div>
-          <div class="widget-content">
-
-          <a href="#myModal" data-toggle="modal" class="btn btn-success">View Popup</a>
-            <div id="myModal" class="modal hide" aria-hidden="true" style="display: none;">
-              <div class="modal-header">
-                <button data-dismiss="modal" class="close" type="button">×</button>
-                <h3>Pop up Header</h3>
-              </div>
-              <div class="modal-body">
-                <p>Here is the text coming you can put also image if you want…</p>
-              </div>
-            </div>
-          </div>
+  <div class="widget-content">
+  <a id="loadAjax" href="#myModal" data-toggle="modal" class="btn btn-success">View Popup</a>
+    <div id="loadAjaxContainer" class="modal hide" aria-hidden="true" style="display: none;">
+      <div class="modal-header">
+        <button data-dismiss="modal" class="close" type="button">×</button>
+        <h3>Pop up Header</h3>
+      </div>
+      <div class="modal-body">
+        <p>Here is the text coming you can put also image if you want…</p>
+      </div>
+    </div>
+  </div>
 </div>
-
-<?php $this->registerJs("
-
-  //Boostrap modal
-  $('#myModal').modal('show');
-  $('#myModal').find('.modal-header h3').text('SHOTO!!!');
-  $('#myModal').find('.modal-body').load('set-image?id=5&tag=img');
-
-") ?>

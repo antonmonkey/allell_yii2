@@ -33,7 +33,7 @@ use yii\widgets\ActiveForm;
             
            echo '<span class="label label-important">You could add an image later</span>'; } else {
               
-              echo Html::a('Add image', ['set-image', 'id' => $model->id, 'tag' => 'img'], ['class' => 'btn btn-primary']); 
+              echo '<a href="#loadAjaxContainer" data-toggle="modal" data-link="set-image?id=' . $model->id . '&tag=img" class="btn btn-primary modal-add-image">Add image</a>';
 
               } ?>
 
@@ -45,13 +45,15 @@ use yii\widgets\ActiveForm;
       <div class="controls">
         <p><img src="<?= $model->getImage(imgflare) ?>" width="150px" alt=""></p>
 
-        <?php if($model->isNewRecord) {
+        <?php if($model->isNewRecord) : ?>
 
-            echo '<span class="label label-important">You could add an image later</span>'; } else {
+            <span class="label label-important">You could add an image later</span>
+            
+            <?php  else : ?> 
               
-              echo Html::a('Add image', ['set-image', 'id' => $model->id, 'tag' => 'imgflare'], ['class' => 'btn btn-primary']); 
+            <a href="#loadAjaxContainer" data-toggle="modal" data-link="set-image?id=<?=$model->id?>&tag=imgflare" class="btn btn-primary modal-add-image">Add image</a>
 
-              } ?>
+            <?php  endif; ?>
 
         <div class="help-block"></div></span>
       </div>

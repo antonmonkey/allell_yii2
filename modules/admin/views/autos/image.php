@@ -11,15 +11,9 @@ $this->title = 'Add image';
 ?>
 
 
-<div id="content">
-  <div id="content-header">
-    <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i> Home</a> <a href="#" class="current">Interface elements</a> </div>
-    <h1>Autos</h1>
-  </div>
-<div class="container-fluid">
-  <hr>
+
   <div class="row-fluid">
-    <div class="span6">
+    <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
           <h5><?= Html::encode($this->title) ?></h5>
@@ -51,8 +45,4 @@ $this->title = 'Add image';
       </div>
     </div>
     </div>
-  </div>
-</div>
-
-
 
