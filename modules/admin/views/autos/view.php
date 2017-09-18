@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
+use yii\helpers\Url;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Autos */
@@ -13,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="#" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i> Home</a> <a href="#" class="current">View</a> </div>
+    <div id="breadcrumb"><a href="<?php echo Url::to(['autos/index']); ?>" class="tip-bottom" data-original-title="Go to Home"><i class="icon-home"></i> Home</a> <a href="#" class="current">View</a> </div>
     <h1>Autos</h1>
   </div>
   <div class="container-fluid">

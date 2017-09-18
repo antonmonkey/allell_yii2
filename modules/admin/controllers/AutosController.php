@@ -69,7 +69,7 @@ class AutosController extends Controller
         $model = new Autos();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['update', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -88,7 +88,7 @@ class AutosController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['index']);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -125,7 +125,7 @@ class AutosController extends Controller
         }
     }
 
-    public function actionSetImage($id)
+    public function actionSetImage($id, $tag)
     {
 
       $model = new ImageUpload;
@@ -136,12 +136,12 @@ class AutosController extends Controller
 
           $file = UploadedFile::getInstance($model, 'image');
 
-          if ($autos->saveImage($model->uploadFile($file, $autos->img));) {
-            return $this->redirect(['view', 'id' => $autos->id]);
+          if ($autos->saveImage($model->uploadFile($file, $autos->$tag), $tag)) {
+            return $this->redirect(['update', 'id' => $autos->id]);
           }
 
       }
 
-      return $this->render('image', ['model' => $model]);
+      return $this->renderAjax('image', ['model' => $model]);
     }
 }

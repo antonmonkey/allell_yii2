@@ -50,7 +50,7 @@ $config = [
             'services' => 'site/services',
             'admin' => 'admin/admin/index',
           ],
-    ],
+        ],
     ],
     'modules' => [
       'admin' => [

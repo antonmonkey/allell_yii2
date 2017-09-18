@@ -4,6 +4,7 @@ use yii\bootstrap\Nav;
 use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use app\modules\admin\assets\AdminAsset;
+use yii\helpers\Url;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -31,7 +32,7 @@ AdminAsset::register($this);
 
 
 <!--top-Header-menu-->
-<div id="user-nav" class="navbar">
+<div id="user-nav" class="navbar navbar-inverse">
   <ul class="nav">
     <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
       <ul class="dropdown-menu">
@@ -70,8 +71,8 @@ AdminAsset::register($this);
     <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Типы автомобилей</span> <span class="label label-important">2</span></a>
       <ul>
-        <li><a href="create">Create</a></li>
-        <li><a href="index">View</a></li>
+        <li><a href="<?php echo Url::to(['autos/create'])?>">Create</a></li>
+        <li><a href="<?php echo Url::to(['autos/index'])?>">View</a></li>
         </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>

@@ -30,8 +30,8 @@ $this->params['breadcrumbs'][] = $this->title;
               <ul class="recent-posts">
                 <?php foreach ($model as $model) : ?>
                 <li>
-                  <div class="user-thumb">
-                    <img width="40" height="40" alt="User" src="public/images/<?=$model['img'];?>">
+                  <div class="auto-type-thumb">
+                    <img src="<?= $model->getImage('img') ?>" width="100px" alt="car">
                   </div>
                   <div class="article-post">
                     <div class="fr">
@@ -43,10 +43,9 @@ $this->params['breadcrumbs'][] = $this->title;
                               'method' => 'post',
                           ],
                         ]) ?></div>
+                    <p><p>Type: <?=$model['type'];?></p>
+                    <p>Flare: <?=$model['imgflare'];?></p></p>
                     <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
-                    <p><p><?=$model['type'];?></p></p>
-                    <p>
-                    </p>
                   </div>
                 </li>
                 <?php endforeach ; ?>

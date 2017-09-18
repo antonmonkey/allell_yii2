@@ -1587,3 +1587,20 @@ div.dataTables_wrapper .ui-widget-header {
 }
 #sidebar .content{ display:none;}
 }
+
+
+/* hos styles */ 
+
+.auto-type-thumb {
+  background: none repeat scroll 0 0 #FFFFFF;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 2px;
+  width: 80px;
+}
+
+.controls img {
+  border: 1px solid grey;
+}

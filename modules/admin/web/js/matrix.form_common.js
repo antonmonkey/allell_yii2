@@ -148,6 +148,7 @@ $(document).ready(function() {
 
 	//Boostrap modal
 	$('#myModal').modal({ show: false});
+  $('#myModal').find('.modal-header h3').text('SHOTO!!!');
 	
 	//add event to modal after closed
 	$('#myModal').on('hidden', function () {

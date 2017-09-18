@@ -3,6 +3,7 @@
 namespace app\models;
 
 use Yii;
+use app\models\ImageUpload;
 
 /**
  * This is the model class for table "autos".
@@ -28,8 +29,8 @@ class Autos extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['type', 'img',], 'required'],
-            [['type', 'img', 'imgflare'], 'string', 'max' => 255],
+            [['type'], 'required'],
+            [['type'], 'string', 'max' => 255],
         ];
     }
 
@@ -47,10 +48,30 @@ class Autos extends \yii\db\ActiveRecord
         ];
     }
 
-    public function saveImage($filename)
+    public function saveImage($filename, $tag)
     {
-        $this->img = $filename;
+      $this->$tag = $filename;
 
-        return $this->save(false);
+      return $this->save(false);
+    }
+
+    public function getImage($tag)
+    {
+      return ($this->$tag) ? '/uploads/' . $this->$tag : '/public/images/no-image.png';
+    }
+
+    public function deleteImage()
+    {
+      $currentImage = $this->img;
+
+      $imageUploadModel = new ImageUpload();
+
+      $imageUploadModel->deleteCurrentImage($this->img);
+    }
+
+    public function beforeDelete()
+    {
+      $this->deleteImage();
+      return parent::beforeDelete();
     }
 }

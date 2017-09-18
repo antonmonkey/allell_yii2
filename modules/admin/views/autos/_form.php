@@ -24,40 +24,52 @@ use yii\widgets\ActiveForm;
                       ],
            ])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'img', [
-                    'template' => '{label}<div class=controls>{input}</div>',
-                    'inputOptions' => [
-                      'placeholder' => $model->getAttributeLabel('img'),
-                      'class' => 'span11',
-                      ],
-           ])->textInput(['maxlength' => true]) ?>
-    
-    <?= $form->field($model, 'imgflare', [
-                    'template' => '{label}<div class=controls>{input}</div>',
-                    'inputOptions' => [
-                      'placeholder' => $model->getAttributeLabel('imgflare'),
-                      'class' => 'span11',
-                      ],
-           ])->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'created', [
-                    'template' => '{label}<div class=controls>{input}</div>',
-                    'inputOptions' => [
-                      'data-date' => '',
-                      'data-date-format' =>'dd-mm-yyyy',
-                      'value' => '',
-                      'class' => 'span11', //datepicker
-                      ],
-           ])->textInput(['maxlength' => true]) ?>
     <div class="control-group field-autos-type required">
-      <label class="control-label" for="autos-type">Add image</label>
+      <label class="control-label" for="autos-type">Image</label>
       <div class="controls">
-        <?= Html::a('Add image', ['set-image', 'id' => $model->id], ['class' => 'btn btn-default']) ?>
+        <p><img src="<?= $model->getImage('img') ?>" width="150px" alt=""></p>
+        
+        <?php if($model->isNewRecord) {
+            
+           echo '<span class="label label-important">You could add an image later</span>'; } else {
+              
+              echo Html::a('Add image', ['set-image', 'id' => $model->id, 'tag' => 'img'], ['class' => 'btn btn-primary']); 
+
+              } ?>
+
+        <div class="help-block"></div></span>
+      </div>
+    </div>
+    <div class="control-group field-autos-type required">
+      <label class="control-label" for="autos-type">Image Flare</label>
+      <div class="controls">
+        <p><img src="<?= $model->getImage(imgflare) ?>" width="150px" alt=""></p>
+
+        <?php if($model->isNewRecord) {
+
+            echo '<span class="label label-important">You could add an image later</span>'; } else {
+              
+              echo Html::a('Add image', ['set-image', 'id' => $model->id, 'tag' => 'imgflare'], ['class' => 'btn btn-primary']); 
+
+              } ?>
+
         <div class="help-block"></div></span>
       </div>
     </div>
     <div class="form-actions">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+
+        <?php if (!$model->isNewRecord) : ?>
+
+        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+            'class' => 'btn btn-danger',
+            'data' => [
+                'confirm' => 'Are you sure you want to delete this item?',
+                'method' => 'post',
+            ],
+        ]) ?>
+
+        <?php endif; ?>
     </div>
 
     <?php ActiveForm::end(); ?>
