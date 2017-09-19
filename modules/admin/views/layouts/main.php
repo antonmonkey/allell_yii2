@@ -71,9 +71,15 @@ AdminAsset::register($this);
     <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Типы автомобилей</span> <span class="label label-important">2</span></a>
       <ul>
-        <li><a href="<?php echo Url::to(['autos/create'])?>">Create</a></li>
-        <li><a href="<?php echo Url::to(['autos/index'])?>">View</a></li>
+        <li><a href="<?php echo Url::to(['autos/create'])?>">Добавить тип</a></li>
+        <li><a href="<?php echo Url::to(['autos/index'])?>">Посмотреть все типы</a></li>
         </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Авто на продажу</span> <span class="label label-important">2</span></a>
+      <ul>
+        <li><a href="<?php echo Url::to(['autos-sale/create'])?>">Добавить авто</a></li>
+        <li><a href="<?php echo Url::to(['autos-sale/index'])?>">Посомтреть все авто</a></li>
+      </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
       <ul>
