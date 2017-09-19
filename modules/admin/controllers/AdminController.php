@@ -12,13 +12,25 @@ class AdminController extends Controller
 
     public $layout = '@app/modules/admin/views/layouts/main.php';
 
+    public function actions()
+    {
+        return [
+            'error' => ['class' => 'yii\web\ErrorAction'],
+        ];
+    }
+
     /**
      * Renders the index view for the module
      * @return string
      */
     public function actionIndex()
     {
-        return $this->render('opotunities-digest');
+      return $this->render('opotunities-digest');
+    }
+
+    public function actionError()
+    {
+      return $this->render('error');
     }
     
 }
