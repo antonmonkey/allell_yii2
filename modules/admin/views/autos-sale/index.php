@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?php foreach ($model as $model) : ?>
                 <li>
                   <div class="auto-type-thumb">
-                    <img src="<?=$model['image'];?>" width="100px" alt="car">
+                    <img src="<?= $model->getImage('image');?>" width="100px" alt="car">
                   </div>
                   <div class="article-post">
                     <div class="fr">
@@ -46,7 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                           ],
                         ]) ?></div>
                     <p>Title: <?=$model['title'];?></p>
-                    <p>Type: <?=$model['auto_type_id'];?></p>
+                    <p>Type: <?=$types[$model['auto_type_id']];?></p>
                     <p>Content: <?=$model['content'];?></p>
                     <span class="user-info"><?=$model['date'];?></span>
                   </div>

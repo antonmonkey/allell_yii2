@@ -49,6 +49,7 @@ $config = [
             'eshop' => 'site/eshop',
             'services' => 'site/services',
             'admin' => 'admin/admin/index',
+            'autos/<id>' => 'autos/index',
           ],
         ],
         'assetManager' => [

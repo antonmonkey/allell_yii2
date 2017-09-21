@@ -32,7 +32,7 @@ PublicAsset::register($this);
                   <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
               </button>
               <a class="navbar-brand page-scroll" href="/">
-                <img alt="Brand" src="public/images/small-logo.png" class="img-responsive">
+              <?= Html::img('@web/public/images/small-logo.png', ['alt'=>'Brand', 'class'=>'img-responsive']);?>
               </a>
           </div>
 

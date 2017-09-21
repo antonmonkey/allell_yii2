@@ -27,7 +27,7 @@ use yii\widgets\ActiveForm;
     <div class="control-group field-autos-type required">
       <label class="control-label" for="autos-type">Image</label>
       <div class="controls">
-        <p><img src="<?= $model->getImage('img') ?>" width="150px" alt=""></p>
+        <p><img src="<?=$model->getImage('img');?>" width="150px" alt=""></p>
         
         <?php if($model->isNewRecord) {
             
@@ -43,7 +43,7 @@ use yii\widgets\ActiveForm;
     <div class="control-group field-autos-type required">
       <label class="control-label" for="autos-type">Image Flare</label>
       <div class="controls">
-        <p><img src="<?= $model->getImage(imgflare) ?>" width="150px" alt=""></p>
+        <p><img src="<?=$model->getImage('imgflare');?>" width="150px" alt=""></p>
 
         <?php if($model->isNewRecord) : ?>
 

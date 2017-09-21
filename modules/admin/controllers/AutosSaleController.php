@@ -9,7 +9,9 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use app\models\Autos;
-
+use yii\helpers\ArrayHelper;
+use app\models\ImageUpload;
+use yii\web\UploadedFile;
 /**
  * AutosSaleController implements the CRUD actions for AutosSale model.
  */
@@ -40,9 +42,13 @@ class AutosSaleController extends Controller
     public function actionIndex()
     {
         $model = AutosSale::find()->all();
+        $autos = Autos::find()->all();
+        $types = ArrayHelper::map($autos, 'id', 'type');
+        var_dump($types);
 
         return $this->render('index', [
             'model' => $model,
+            'types' => $types,
         ]);
     }
 
@@ -66,12 +72,15 @@ class AutosSaleController extends Controller
     public function actionCreate()
     {
         $model = new AutosSale();
+        $auto = Autos::find()->all();
+        $types = ArrayHelper::map($auto, 'id', 'type');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
+                'types' => $types,
             ]);
         }
     }
@@ -85,10 +94,8 @@ class AutosSaleController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-        $autoTypes = Autos::find()->select('type')->asArray()->all();
-        foreach ($autoTypes as $autoType) {
-          $types[] = $autoType['type']; 
-        }
+        $auto = Autos::find()->all();
+        $types = ArrayHelper::map($auto, 'id', 'type');
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['index', 'id' => $model->id]);
@@ -127,5 +134,25 @@ class AutosSaleController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionSetImage($id, $tag)
+    {
+
+      $model = new ImageUpload;
+
+      if  (Yii::$app->request->isPost)
+      {
+          $autos = $this->findModel($id);
+
+          $file = UploadedFile::getInstance($model, 'image');
+
+          if ($autos->saveImage($model->uploadFile($file, $autos->$tag), $tag)) {
+            return $this->redirect(['update', 'id' => $autos->id]);
+          }
+
+      }
+
+      return $this->renderAjax('image', ['model' => $model]);
     }
 }

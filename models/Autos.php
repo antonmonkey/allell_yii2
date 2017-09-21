@@ -74,4 +74,8 @@ class Autos extends \yii\db\ActiveRecord
       $this->deleteImage();
       return parent::beforeDelete();
     }
+
+    public function getAutosSale() {
+      return $this->hasMany(AutosSale::className(), ['auto_type_id' => 'id']);
+    }
 }

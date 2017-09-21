@@ -34,23 +34,29 @@ use yii\widgets\ActiveForm;
                   ],
        ])->textarea(['rows' => 6]) ?>
 
-    <?= $form->field($model, 'image', [
-                'template' => "{label}<div class=controls>{input}<span class='help-inline'>{error}</span></div>",
-                'inputOptions' => [
-                  'placeholder' => 'Image',
-                  'class' => 'span11',
-                  ],
-       ])->textInput(['maxlength' => true]) ?>
+    <div class="control-group field-autos-type required">
+      <label class="control-label" for="autos-type">Image</label>
+      <div class="controls">
+        <p><img src="<?= $model->getImage('image') ?>" width="150px" alt=""></p>
+        
+        <?php if($model->isNewRecord) {
+            
+           echo '<span class="label label-important">You could add an image later</span>'; } else {
+              
+              echo '<a href="#loadAjaxContainer" data-toggle="modal" data-link="set-image?id=' . $model->id . '&tag=image" class="btn btn-primary modal-add-image">Add image</a>';
+
+              } ?>
+
+        <div class="help-block"></div></span>
+      </div>
+    </div>
 
     <?= $form->field($model, 'auto_type_id', [
                 'template' => "{label}<div class=controls>{input}<span class='help-inline'>{error}</span></div>",
                 'inputOptions' => [
                   'class' => 'span11',
                   ],
-       ])->dropdownList($types,
-
-    ['prompt'=>'Select Auto']
-        );?>
+       ])->dropdownList($types);?>
 
     <div class="form-actions">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

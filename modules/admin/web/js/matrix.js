@@ -155,18 +155,17 @@ $(document).ready(function(){
 		
 	});
 	
-
-  $('body').on('click', '#lightbox', function() { 
-		$('#lightbox').hide(200);
-	});
-	
+  // hossi's js !!!	
   $('.modal-add-image').on('click', function() {
-    $('#loadAjaxContainer .modal-header h3').text('SHOTO');
+    $('#loadAjaxContainer .modal-header h3').text('Image Upload');
     var link = ($(this).data('link'));
-    $('#loadAjaxContainer .modal-body').load(link);
-
+    $('#loadAjaxContainer .modal-body').load(link , function( response, status, xhr ) {
+      if ( status == "error" ) {
+        var msg = "Sorry but there was an error: ";
+        $('#loadAjaxContainer .modal-body').html( msg + xhr.status + " " + xhr.statusText );
+      }
+    });
   });
-
 });
 
 
