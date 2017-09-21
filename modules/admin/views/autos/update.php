@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = 'Update';
           <div class="widget-content nopadding">
             <div class="autos-update">
 
-              <?= $this->render('_form', [
+              <?= $this->render('_form_update', [
               'model' => $model,
               ]) ?>
 
@@ -39,7 +39,6 @@ $this->params['breadcrumbs'][] = 'Update';
     </div>
   </div>
   <div class="widget-content">
-  <a id="loadAjax" href="#myModal" data-toggle="modal" class="btn btn-success">View Popup</a>
     <div id="loadAjaxContainer" class="modal hide" aria-hidden="true" style="display: none;">
       <div class="modal-header">
         <button data-dismiss="modal" class="close" type="button">×</button>

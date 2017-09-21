@@ -41,13 +41,19 @@ class AutosSaleController extends Controller
      */
     public function actionIndex()
     {
-        $model = AutosSale::find()->all();
-        $autos = Autos::find()->all();
-        $types = ArrayHelper::map($autos, 'id', 'type');
-        var_dump($types);
+        $autos = AutosSale::find()->all();
+
+        foreach ($autos as $auto) {
+          $createDate = new \DateTime($auto->date);
+          $new_date = $createDate->format('Y-m-d');
+          $auto->date = $new_date;
+        }
+
+        $autosTypes = Autos::find()->all();
+        $types = ArrayHelper::map($autosTypes, 'id', 'type');
 
         return $this->render('index', [
-            'model' => $model,
+            'autos' => $autos,
             'types' => $types,
         ]);
     }

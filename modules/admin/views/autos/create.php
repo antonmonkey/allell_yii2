@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
           </div>
           <div class="widget-content nopadding">
 
-            <?= $this->render('_form', [
+            <?= $this->render('_form_create', [
                 'model' => $model,
             ]) ?>
 

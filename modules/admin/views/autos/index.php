@@ -31,24 +31,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 <li>
                   <?= Html::a('Create Auto Type', ['create'], ['class' => 'btn btn-success']) ?>
                 </li>
-                <?php foreach ($model as $model) : ?>
+                <?php foreach ($autos as $auto) : ?>
                 <li>
                   <div class="auto-type-thumb">
-                    <img src="<?= $model->getImage('img') ?>" width="100px" alt="car">
+                    <img src="<?= $auto->getImage('img') ?>" width="100px" alt="car">
                   </div>
                   <div class="article-post">
                     <div class="fr">
-                      <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary btn-mini']) ?>
-                      <?= Html::a('Delete', ['delete', 'id' => $model->id], [
+                      <?= Html::a('Update', ['update', 'id' => $auto->id], ['class' => 'btn btn-primary btn-mini']) ?>
+                      <?= Html::a('Delete', ['delete', 'id' => $auto->id], [
                           'class' => 'btn btn-danger btn-mini',
                           'data' => [
                               'confirm' => 'Are you sure you want to delete this item?',
                               'method' => 'post',
                           ],
                         ]) ?></div>
-                    <p><p>Type: <?=$model['type'];?></p>
-                    <p>Flare: <?=$model['imgflare'];?></p></p>
-                    <span class="user-info"> By: john Deo / Date: 2 Aug 2012 / Time:09:27 AM </span>
+                    <p>Type: <?=$auto['type'];?></p>
+                    <span class="user-info"><?php echo 'Updated: ' . $auto['created'];?></span>
+                    <p></p>
+                    <p>Flare: <?=$auto['imgflare'];?></p>
                   </div>
                 </li>
                 <?php endforeach ; ?>

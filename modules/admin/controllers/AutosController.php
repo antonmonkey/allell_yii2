@@ -40,10 +40,16 @@ class AutosController extends Controller
      */
     public function actionIndex()
     {
-        $model = Autos::find()->all();
+        $autos = Autos::find()->all();
+
+        foreach ($autos as $auto) {
+          $createDate = new \DateTime($auto->created);
+          $new_date = $createDate->format('Y-m-d');
+          $auto->created = $new_date;
+        }
 
         return $this->render('index', [
-          'model' => $model,
+          'autos' => $autos,
         ]);
     }
 
@@ -69,6 +75,10 @@ class AutosController extends Controller
         $model = new Autos();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            $model->setSlug();
+            $model->save(false);
+
             return $this->redirect(['update', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -86,8 +96,12 @@ class AutosController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
+
+            if ($model->slug == '') {
+              $model->setSlug();
+              $model->save(false);
+            }
             return $this->redirect(['index']);
         } else {
             return $this->render('update', [
@@ -105,7 +119,6 @@ class AutosController extends Controller
     public function actionDelete($id)
     {
         $this->findModel($id)->delete();
-
         return $this->redirect(['index']);
     }
 
@@ -133,15 +146,12 @@ class AutosController extends Controller
       if  (Yii::$app->request->isPost)
       {
           $autos = $this->findModel($id);
-
           $file = UploadedFile::getInstance($model, 'image');
 
           if ($autos->saveImage($model->uploadFile($file, $autos->$tag), $tag)) {
             return $this->redirect(['update', 'id' => $autos->id]);
           }
-
       }
-
       return $this->renderAjax('image', ['model' => $model]);
     }
 }

@@ -11,7 +11,11 @@
 
 <h1>SHTO!!!</h1>
 <p><?=$id;?></p>
-        
+        <?php 
+          foreach ($r as $rr) {
+            echo '<p>' . $rr['title'] . '</p>';
+          }
+         ?>
       </div> 
       <!-- end loop -->
   </div>

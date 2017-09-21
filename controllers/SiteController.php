@@ -12,6 +12,14 @@ use app\models\Autos;
 
 class SiteController extends Controller
 {
+     public function beforeAction($action) {
+        if (!parent::beforeAction($action))
+            return false;
+        Yii::$app->view->title = 'Allell - ' . ucfirst($this->action->id);
+
+        return true;
+    }
+
     public function behaviors()
     {
         return [

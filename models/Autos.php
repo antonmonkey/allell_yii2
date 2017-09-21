@@ -4,6 +4,7 @@ namespace app\models;
 
 use Yii;
 use app\models\ImageUpload;
+use app\components\helpers\HosSlugCreate;
 
 /**
  * This is the model class for table "autos".
@@ -12,6 +13,7 @@ use app\models\ImageUpload;
  * @property string $type
  * @property string $img
  * @property string $created
+ * @property string $slug
  */
 class Autos extends \yii\db\ActiveRecord
 {
@@ -31,6 +33,8 @@ class Autos extends \yii\db\ActiveRecord
         return [
             [['type'], 'required'],
             [['type'], 'string', 'max' => 255],
+            [['slug'], 'string'],
+            [['created'], 'default', 'value' => date('Y-m-d H:i:s')],
         ];
     }
 
@@ -45,6 +49,7 @@ class Autos extends \yii\db\ActiveRecord
             'img' => 'Img',
             'imgflares' => 'Img Flares',
             'created' => 'Created',
+            'slug' => 'Slug'
         ];
     }
 
@@ -75,7 +80,14 @@ class Autos extends \yii\db\ActiveRecord
       return parent::beforeDelete();
     }
 
-    public function getAutosSale() {
+    public function getAutosSale()
+    {
       return $this->hasMany(AutosSale::className(), ['auto_type_id' => 'id']);
+    }
+
+    public function setSlug()
+    {
+      $slug = HosSlugCreate::createSlug($this->type);
+      $this->slug = $slug;
     }
 }

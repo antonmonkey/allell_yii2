@@ -19,7 +19,7 @@
           <hr width="75%" class="page-autos-line">
           <h3><?=$auto['type'];?></h3>
           <div class="btn-wrap-autos-page">
-            <a href="http://allelectrics.com.ua/autos/nissan-leaf/" class="page-scroll btn btn-xl btn-autos-page">Подробнее</a>
+            <a href="/autos/<?=$auto['slug'];?>" class="page-scroll btn btn-xl btn-autos-page">Подробнее</a>
           </div>
         </div>
 
