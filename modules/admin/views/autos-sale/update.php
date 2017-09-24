@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = 'Update';
   <div class="container-fluid">
     <hr>
     <div class="row-fluid">
-      <div class="span6">
+      <div class="span9">
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
             <h5><?= Html::encode($this->title) ?></h5>

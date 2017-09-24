@@ -7,7 +7,14 @@
 
     t(".navbar-collapse ul li a").click(function() { t(".navbar-toggle:visible").click() }),
 
-    t("#mainNav").affix({ offset: { top: 100 } }) }(jQuery);
+    t("#mainNav").affix({ offset: { top: 100 } })
+
+  $('.auto-imgs-slider').slick({
+    dots: true,
+    arrows: false,
+  });
+
+     }(jQuery);
 
  // map 
 function init_map(){
@@ -56,12 +63,9 @@ map.setOptions({styles: styles});
 }
   google.maps.event.addDomListener(window, 'load', init_map);
 
-  // slick slider
+// slick slider
 $(document).ready(function(){
-	$('.auto-imgs-slider').slick({
-		dots: true,
-		arrows: false,
-	});
+
 });
 
 

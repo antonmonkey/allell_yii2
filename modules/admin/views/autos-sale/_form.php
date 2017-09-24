@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\redactor\widgets\Redactor;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\AutosSale */
@@ -26,13 +27,9 @@ use yii\widgets\ActiveForm;
                   ],
        ])->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content', [
-                'template' => "{label}<div class=controls>{input}<span class='help-inline'>{error}</span></div>",
-                'inputOptions' => [
-                  'placeholder' => 'Content',
-                  'class' => 'span11',
-                  ],
-       ])->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'content')->widget(Redactor::className(), [
+        'clientOptions' => ['removeWithoutAttr' => false,],
+    ]) ?>
 
     <div class="control-group field-autos-type required">
       <label class="control-label" for="autos-type">Image</label>

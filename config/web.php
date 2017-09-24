@@ -55,7 +55,7 @@ $config = [
         'assetManager' => [
             'bundles' => [
                 'yii\web\JqueryAsset' => [
-                    'sourcePath' => null,   // не опубликовывать комплект
+                    'sourcePath' => null,
                     'js' => [
                         '//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js',
                     ]
@@ -67,6 +67,7 @@ $config = [
       'admin' => [
           'class' => 'app\modules\admin\Module',
           ],
+      'redactor' => 'yii\redactor\RedactorModule',
     ],
     'params' => $params,
 ];

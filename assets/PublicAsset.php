@@ -17,10 +17,13 @@ class PublicAsset extends AssetBundle
     public $basePath = '@webroot';
     public $baseUrl = '@web';
     public $css = [
+      'public/slick-carousel/slick/slick.css',
+      'public/slick-carousel/slick/slick-theme.css',
       'public/css/style.css',
     ];
     public $js = [
-      'public/js/main.js'
+      'public/slick-carousel/slick/slick.js',
+      'public/js/main.js',
     ];
     public $depends = [
       'yii\web\YiiAsset',
