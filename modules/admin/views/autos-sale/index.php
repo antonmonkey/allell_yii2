@@ -47,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ]) ?></div>
                     <p>Title: <?=$auto['title'];?></p>
                     <p>Type: <?=$types[$auto['auto_type_id']];?></p>
-                    <p>Content: <?=$auto['content'];?></p>
+                    <p>Content: <?=strip_tags(substr($auto['content'], 0, 100)) . '...';?></p>
                     <span class="user-info"><?='Updated:' . $auto['date'];?></span>
                   </div>
                 </li>
